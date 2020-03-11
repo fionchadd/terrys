@@ -177,7 +177,7 @@ display: flex;
 	.roundel {
 		left: 50%;
     bottom: -125px;
-    margin-left: -125px;
+    margin-left: -127.5px;
     z-index: 9;
 	}
 	.col.site-body {
@@ -185,5 +185,15 @@ display: flex;
 	}
 	.mobile img {
 		display: block;
+	}
+}
+
+@media (max-width: 370px) {
+	.roundel {
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		text-align: center;
+		padding: 0 20px;
 	}
 }

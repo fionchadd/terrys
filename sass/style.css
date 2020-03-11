@@ -153,7 +153,7 @@ section {
 
 @media (max-width: 450px) {
   .row {
-    width: 95%;
+    width: 100%;
     padding: 0;
   }
   .col {
@@ -1148,7 +1148,7 @@ p.days, p.maplink {
   .roundel {
     left: 50%;
     bottom: -125px;
-    margin-left: -125px;
+    margin-left: -127.5px;
     z-index: 9;
   }
   .col.site-body {
@@ -1156,6 +1156,16 @@ p.days, p.maplink {
   }
   .mobile img {
     display: block;
+  }
+}
+
+@media (max-width: 370px) {
+  .roundel {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 20px;
   }
 }
 

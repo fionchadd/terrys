@@ -42,6 +42,10 @@ background-clip: text;
     -webkit-font-smoothing: antialiased;
 }
 
+h2.booking {
+	margin-bottom: 40px;
+}
+
 p {
 	font-family:   $font__body;
 	font-size: 18px;
@@ -53,8 +57,15 @@ p {
     -webkit-font-smoothing: antialiased;
 }
 
-a, a:hover {
+a {
 	color: $color__lightyellow;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+
+a:hover {
+	color: $color__darkyellow;
+	text-decoration: none;	
 }
 
 p.days, p.maplink {
@@ -63,6 +74,17 @@ p.days, p.maplink {
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
+}
+
+.maplink {
+	margin-top: 13px;
+}
+
+.days {
+	margin-top: 20px;
+}
+.days:first-child {
+	margin-top: 0;
 }
 
 .col.image-gallery {

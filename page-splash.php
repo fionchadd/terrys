@@ -84,7 +84,7 @@ get_header();
 <p><?php echo $email; ?></p>
 </div>
 <div class="area">
-<h2>- No Bookings -</h2>
+<h2 class="booking">- No Bookings -</h2>
 <?php 				if( have_rows('social_links') ): 
 					while( have_rows('social_links') ): the_row(); 
 					$ta = get_sub_field('trip_advisor'); 
@@ -102,8 +102,8 @@ get_header();
 <?php endwhile; else : endif; ?>				
 </div>
 </div>
-</div>
 <div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
+</div>
 <div class="row">
 	<div class="col full mobile">
 	<img src='<?php echo $fullmimage; ?>'>

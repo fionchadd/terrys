@@ -21,3 +21,34 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+body {
+	background: $color__red;
+}
+
+h2 {
+	font-family:   $font__header;
+	font-size: 24px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: $color__darkyellow;
+}
+
+p {
+	font-family:   $font__body;
+	font-size: 18px;
+	line-height: 26px;
+	color: $color__lightyellow;
+}
+
+a, a:hover {
+	color: $color__lightyellow;
+}
+
+p.days, p.maplink {
+	font-family:   $font__altbody;	
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}

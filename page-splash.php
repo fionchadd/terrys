@@ -37,6 +37,8 @@
 <img class="logoimage" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />			
 <p><?php echo $copy; ?></p>
 <h2>Find Us</h2>
+<p><?php echo $address; ?></p>
+<p class="maplink"><a href="<?php echo $map; ?>" target="_blank"><img src='/wp-content/themes/terrys-cafe/inc/images/map-icon.svg'> Google Maps</a></p>
 <h2>Opening Times</h2>
 <?php 			if( have_rows('opening_times') ): 
 				while( have_rows('opening_times') ): the_row(); 
@@ -46,6 +48,8 @@
 	<p class="times"><?php echo $time; ?></p>		
 	<?php endwhile; else : endif; ?>		
 <h2>Contact</h2>
+<p><?php echo $phone; ?></p>
+<p><?php echo $email; ?></p>
 <h2>- No Bookings -</h2>
 <?php 				if( have_rows('social_links') ): 
 					while( have_rows('social_links') ): the_row(); 

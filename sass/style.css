@@ -1064,6 +1064,12 @@ p.days, p.maplink {
   display: block;
 }
 
+.flexslider.gallery .slides li {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {
   display: none;
 }

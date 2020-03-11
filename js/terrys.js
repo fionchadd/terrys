@@ -3,7 +3,7 @@ jQuery(window).load(function() {
         jQuery('.flexslider.gallery').flexslider({
             animation: "fade",
            slideshow: true,
-              animationSpeed: 1000
+              animationSpeed: 2000
           });
         });
           

@@ -93,6 +93,11 @@ display: flex;
 		height: 100%;
 		display: block;
 	}
+	.slides li {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 }
 
 .page-template-page-splash {

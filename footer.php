@@ -31,6 +31,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="/wp-content/themes/signoi-theme/js/jquery.flexslider.js"></script>
 </body>
 </html>

@@ -121,9 +121,9 @@ add_action( 'widgets_init', 'terrys_cafe_widgets_init' );
  */
 function terrys_cafe_scripts() {
 	wp_enqueue_style( 'terrys-cafe-style', get_template_directory_uri() . '/sass/style.css');
-
+	wp_enqueue_style( 'flexslider-style', get_template_directory_uri() . '/sass/flexslider.css');
 	wp_enqueue_script( 'terrys-cafe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
+	wp_enqueue_script( 'terrys-custom-scripts', get_template_directory_uri() . '/js/terrys.js', array('jquery'), null, true);
 	wp_enqueue_script( 'terrys-cafe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -159,3 +159,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/*--image sizes--*/
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+	add_image_size( 'terrys-gallery', 1100, 1100); 
+}
+
+add_filter( 'signoi-images', 'wpshout_custom_sizes' );
+function wpshout_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+		'terrys-gallery' => __( 'Gallery' ),
+    ) );
+}

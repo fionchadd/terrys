@@ -38,6 +38,9 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: $color__darkyellow; 
+font-family: 'apercuregular';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -47,6 +50,9 @@ p {
 	color: $color__lightyellow;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-family: 'apercuregular';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover {

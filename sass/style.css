@@ -1000,6 +1000,9 @@ h2 {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ECC074;
+  font-family: 'apercuregular';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -1009,6 +1012,9 @@ p {
   color: #FCF7ED;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: 'apercuregular';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover {

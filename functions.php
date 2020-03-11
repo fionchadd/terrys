@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'terrys_cafe_widgets_init' );
  * Enqueue scripts and styles.
  */
 function terrys_cafe_scripts() {
-	wp_enqueue_style( 'terrys-cafe-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'terrys-cafe-style', get_template_directory_uri() . '/sass/style.css');
 
 	wp_enqueue_script( 'terrys-cafe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

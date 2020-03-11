@@ -35,7 +35,8 @@ h2 {
 	margin-bottom: 20px;
 	-webkit-background-clip: text;   
 background-clip: text;
--webkit-text-fill-color: transparent;
+color: $color__darkyellow;
+-webkit-text-fill-color: $color__red;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: $color__darkyellow; 
     -moz-osx-font-smoothing: grayscale;
@@ -78,6 +79,11 @@ p.days, p.maplink {
 
 .maplink {
 	margin-top: 13px;
+}
+
+.maplink img {
+	margin-bottom: -2px;
+    margin-right: 10px;
 }
 
 .days {
@@ -173,5 +179,11 @@ display: flex;
     bottom: -125px;
     margin-left: -125px;
     z-index: 9;
+	}
+	.col.site-body {
+		margin-bottom: 180px;
+	}
+	.mobile img {
+		display: block;
 	}
 }

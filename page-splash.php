@@ -69,7 +69,7 @@ get_header();
 <div class="area"><p><?php echo $copy; ?></p></div>
 <div class="area"><h2>Find Us</h2>
 <p><?php echo $address; ?></p>
-<p class="maplink"><a href="<?php echo $map; ?>" target="_blank"><img src='/wp-content/themes/terrys-cafe/inc/images/map-icon.svg'> Google Maps</a></p></div>
+<p class="maplink"><a href="<?php echo $map; ?>" target="_blank"><img src='/wp-content/themes/terrys-cafe/inc/images/map-icon.svg'>Google Maps</a></p></div>
 <div class="area"><h2>Opening Times</h2>
 <?php 			if( have_rows('opening_times') ): 
 				while( have_rows('opening_times') ): the_row(); 

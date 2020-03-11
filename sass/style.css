@@ -1024,6 +1024,16 @@ p.days, p.maplink {
   min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col.site-body .site-content {
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {

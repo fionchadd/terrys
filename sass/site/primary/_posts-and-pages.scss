@@ -33,11 +33,9 @@ h2 {
 	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 20px;
-	-webkit-background-clip: text;   
-background-clip: text;
 color: $color__darkyellow;
--webkit-text-fill-color: $color__red;
--webkit-text-stroke-width: .3px;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: .5px;
 -webkit-text-stroke-color: $color__darkyellow; 
     -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;

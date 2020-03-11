@@ -53,6 +53,18 @@ p.days, p.maplink {
 	letter-spacing: 0.3px;
 }
 
+.col.image-gallery {
+	padding: 0;
+}
+
+.col.site-body {
+	text-align: center;
+min-height: 100vh;
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+
 .page-template-page-splash {
 	.site-header, .site-footer {
 		display: none;

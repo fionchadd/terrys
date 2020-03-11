@@ -10,10 +10,11 @@ get_header();
 		<main id="main" class="site-main">
 <section>
 <div class="row">
-<div class="col half">
+<div class="col half image-gallery">
 	image gallery here
 </div>
-<div class="col half">
+<div class="col half site-body">
+	<div class="site-content">
 	<?php 
 			$logo = get_field('logo_image'); 
 			$copy = get_field('intro_text'); 
@@ -65,9 +66,10 @@ get_header();
 <a href="<?php echo $twitter; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/twitter.svg'></a>	
 <a href="<?php echo $yt; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/youtube.svg'></a>
 </div>		
-<?php endwhile; else : endif; ?>	
-<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>			
+<?php endwhile; else : endif; ?>				
 </div>
+</div>
+<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
 </div>
 </section>
 		</main><!-- #main -->

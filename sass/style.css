@@ -66,8 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .row {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -1014,6 +1013,17 @@ p.days, p.maplink {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+}
+
+.col.image-gallery {
+  padding: 0;
+}
+
+.col.site-body {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {

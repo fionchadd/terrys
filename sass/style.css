@@ -1061,6 +1061,7 @@ p.days, p.maplink {
 .flexslider.gallery .slides, .flexslider.gallery .slides li {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {

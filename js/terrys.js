@@ -12,7 +12,7 @@ jQuery(window).load(function() {
           var onResize = function() {
             //var docHeight = window.innerHeight;
             var docHeight = jQuery(window).outerHeight();
-            jQuery('.col.site-body').css({height: docHeight});
+            jQuery('.col.site-body').css({'min-height': docHeight});
           };
           jQuery(window).on('resize', onResize);
           onResize();

@@ -1,6 +1,6 @@
 <?php
 /**
- * homepage template
+ * Splash Page template
  * this is for the current splash page & has no header or footer
  */
 
@@ -46,4 +46,5 @@
 	</div><!-- #primary -->
 
 <?php
+
 

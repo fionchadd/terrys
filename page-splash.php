@@ -11,7 +11,26 @@ get_header();
 <section>
 <div class="row">
 <div class="col half image-gallery">
-	image gallery here
+<?php if( have_rows('gallery') ): ?>
+			<div class="flexslider gallery"><ul class="slides">	
+			<?php while( have_rows('gallery') ): the_row(); 
+				$image = get_sub_field('image');
+				if( $image ):
+
+					// Image variables.
+					$url = $image['url'];
+					$imagetitle = $image['title'];
+					$alt = $image['alt'];
+				
+					// Thumbnail size attributes.
+					$size = 'terrys-gallery';
+					$galleryimage = $image['sizes'][ $size ];
+				endif;
+				?>
+				<li style="background-image: <?php echo $galleryimage; ?>"></li>
+		<?php endwhile; ?>	
+		</ul></div>	
+		<?php endif; ?>
 </div>
 <div class="col half site-body">
 	<div class="site-content">

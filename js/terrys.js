@@ -1,6 +1,6 @@
 	    //slider for images
-        jQuery('.flexslider.images').flexslider({
-            animation: "slide",
-           slideshow: false,
+        jQuery('.flexslider.gallery').flexslider({
+            animation: "fade",
+           slideshow: true,
               animationSpeed: 1000
           });

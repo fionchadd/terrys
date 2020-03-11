@@ -1152,7 +1152,7 @@ p.days, p.maplink {
     z-index: 9;
   }
   .col.site-body {
-    margin-bottom: 180px;
+    padding-bottom: 180px;
   }
   .mobile img {
     display: block;

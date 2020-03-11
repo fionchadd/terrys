@@ -966,7 +966,7 @@ a:hover, a:active {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
 .updated:not(.published) {
@@ -1068,6 +1068,10 @@ p.days, p.maplink {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.flexslider.gallery .flex-control-nav, .flexslider.gallery .flex-direction-nav {
+  display: none;
 }
 
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {

@@ -10,7 +10,7 @@ get_header();
 		<main id="main" class="site-main">
 <section>
 <div class="row">
-<div class="col half image-gallery">
+<div class="col half desktop image-gallery">
 <?php if( have_rows('gallery') ): ?>
 			<div class="flexslider gallery"><ul class="slides">	
 			<?php while( have_rows('gallery') ): the_row(); 
@@ -52,7 +52,18 @@ get_header();
 				$size = 'large';
 				$fullimage = $logo['sizes'][ $size ];
 			endif;
+			$mobileimage = get_field('mobile_image'); 
+			if( $mobileimage ):
+
+				// Image variables.
+				$mobileurl = $mobileimage['url'];
+				$mobiletitle = $mobileimage['title'];
+				$mobilealt = $mobileimage['alt'];
 			
+				// Thumbnail size attributes.
+				$mobilesize = 'large';
+				$fullmimage = $mobileimage['sizes'][ $size ];
+			endif;
 			?>
 <div class="area"><img class="logoimage" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>		
 <div class="area"><p><?php echo $copy; ?></p></div>
@@ -91,8 +102,13 @@ get_header();
 <?php endwhile; else : endif; ?>				
 </div>
 </div>
-<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
 </div>
+<div class="row">
+	<div class="col full mobile">
+	<img src='<?php echo $fullmimage; ?>'>
+</div>
+</div>
+<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

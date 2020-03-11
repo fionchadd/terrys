@@ -108,3 +108,15 @@ display: flex;
 		display: none;
 	}
 }
+
+@media (min-width: 980.1px) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 980px) {
+	.desktop {
+		display: none;
+	}
+}

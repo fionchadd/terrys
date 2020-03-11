@@ -37,19 +37,10 @@ h2 {
 background-clip: text;
 color: $color__darkyellow;
 -webkit-text-fill-color: $color__red;
--webkit-text-stroke-width: .5px;
+-webkit-text-stroke-width: .3px;
 -webkit-text-stroke-color: $color__darkyellow; 
     -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	text-shadow:
-    -.5px -.5px 0 $color__darkyellow,
-     0   -.5px 0 $color__darkyellow,
-     .5px -.5px 0 $color__darkyellow,
-     .5px  0   0 $color__darkyellow,
-     .5px  .5px 0 $color__darkyellow,
-     0    .5px 0 $color__darkyellow,
-    -.5px  .5px 0 $color__darkyellow,
-    -.5px  0   0 $color__darkyellow;
 }
 
 h2.booking {

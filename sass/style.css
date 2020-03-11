@@ -999,11 +999,10 @@ h2 {
   background-clip: text;
   color: #ECC074;
   -webkit-text-fill-color: #CB171D;
-  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-width: .3px;
   -webkit-text-stroke-color: #ECC074;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-shadow: -0.5px -0.5px 0 #ECC074, 0 -0.5px 0 #ECC074, 0.5px -0.5px 0 #ECC074, 0.5px 0 0 #ECC074, 0.5px 0.5px 0 #ECC074, 0 0.5px 0 #ECC074, -0.5px 0.5px 0 #ECC074, -0.5px 0 0 #ECC074;
 }
 
 h2.booking {

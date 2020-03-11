@@ -52,3 +52,9 @@ p.days, p.maplink {
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
 }
+
+.page-template-page-splash {
+	.site-header, .site-footer {
+		display: none;
+	}
+}

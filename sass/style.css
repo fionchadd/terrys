@@ -1016,6 +1016,10 @@ p.days, p.maplink {
   letter-spacing: 0.3px;
 }
 
+.page-template-page-splash .site-header, .page-template-page-splash .site-footer {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

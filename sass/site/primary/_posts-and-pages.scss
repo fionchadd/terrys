@@ -31,9 +31,13 @@ h2 {
 	font-size: 24px;
 	line-height: 20px;
 	text-transform: uppercase;
-	color: $color__darkyellow;
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	-webkit-background-clip: text;   
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: $color__darkyellow; 
 }
 
 p {
@@ -115,6 +119,11 @@ display: flex;
 	.site-header, .site-footer {
 		display: none;
 	}
+}
+
+.social-links a {
+	margin-left: 12px;
+	margin-right: 12px;
 }
 
 @media (min-width: 980.1px) {

@@ -65,7 +65,8 @@
 <a href="<?php echo $twitter; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/twitter.svg'></a>	
 <a href="<?php echo $yt; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/youtube.svg'></a>
 </div>		
-<?php endwhile; else : endif; ?>				
+<?php endwhile; else : endif; ?>	
+<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>			
 </div>
 </div>
 

@@ -8,7 +8,7 @@
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+<section>
 <div class="row">
 <div class="col half">
 	image gallery here
@@ -69,6 +69,6 @@
 <div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>			
 </div>
 </div>
-
+</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

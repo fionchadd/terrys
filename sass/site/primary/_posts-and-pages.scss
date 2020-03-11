@@ -73,6 +73,14 @@ display: flex;
 	}
 }
 
+.area {
+	margin-bottom: 30px;
+}
+
+.area:last-child {
+	margin-bottom: 0;
+}
+
 .page-template-page-splash {
 	.site-header, .site-footer {
 		display: none;

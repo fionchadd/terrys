@@ -35,22 +35,25 @@ get_header();
 			endif;
 			
 			?>
-<img class="logoimage" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" />			
-<p><?php echo $copy; ?></p>
-<h2>Find Us</h2>
+<div class="area"><img class="logoimage" src="<?php echo esc_url($fullimage); ?>" alt="<?php echo esc_attr($alt); ?>" /></div>		
+<div class="area"><p><?php echo $copy; ?></p></div>
+<div class="area"><h2>Find Us</h2>
 <p><?php echo $address; ?></p>
-<p class="maplink"><a href="<?php echo $map; ?>" target="_blank"><img src='/wp-content/themes/terrys-cafe/inc/images/map-icon.svg'> Google Maps</a></p>
-<h2>Opening Times</h2>
+<p class="maplink"><a href="<?php echo $map; ?>" target="_blank"><img src='/wp-content/themes/terrys-cafe/inc/images/map-icon.svg'> Google Maps</a></p></div>
+<div class="area"><h2>Opening Times</h2>
 <?php 			if( have_rows('opening_times') ): 
 				while( have_rows('opening_times') ): the_row(); 
 				$day = get_sub_field('days'); 
 				$time = get_sub_field('times'); ?>
 	<p class="days"><?php echo $day; ?></p>	
 	<p class="times"><?php echo $time; ?></p>		
-	<?php endwhile; else : endif; ?>		
-<h2>Contact</h2>
+	<?php endwhile; else : endif; ?>	
+</div>	
+<div class="area"><h2>Contact</h2>
 <p><?php echo $phone; ?></p>
 <p><?php echo $email; ?></p>
+</div>
+<div class="area">
 <h2>- No Bookings -</h2>
 <?php 				if( have_rows('social_links') ): 
 					while( have_rows('social_links') ): the_row(); 
@@ -65,7 +68,7 @@ get_header();
 <a href="<?php echo $fb; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/facebook.svg'></a>	
 <a href="<?php echo $twitter; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/twitter.svg'></a>	
 <a href="<?php echo $yt; ?>" target="blank"><img src='/wp-content/themes/terrys-cafe/inc/images/youtube.svg'></a>
-</div>		
+</div></div>		
 <?php endwhile; else : endif; ?>				
 </div>
 </div>

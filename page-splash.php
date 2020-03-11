@@ -27,7 +27,7 @@ get_header();
 					$galleryimage = $image['sizes'][ $size ];
 				endif;
 				?>
-				<li style="background-image: <?php echo $galleryimage; ?>"></li>
+				<li style="background-image: url(<?php echo $galleryimage; ?>);"></li>
 		<?php endwhile; ?>	
 		</ul></div>	
 		<?php endif; ?>

@@ -3,7 +3,7 @@
  * Template Name: Splash Page template
  * this is for the current splash page & has no header or footer
  */
-
+get_header();
 ?>
 
 	<div id="primary" class="content-area">
@@ -72,3 +72,6 @@
 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<?php
+get_footer();
+

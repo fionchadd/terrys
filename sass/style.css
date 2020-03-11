@@ -1074,6 +1074,14 @@ p.days, p.maplink {
   display: none;
 }
 
+.col.full.mobile {
+  padding: 0;
+}
+
+.roundel {
+  position: absolute;
+}
+
 .page-template-page-splash .site-header, .page-template-page-splash .site-footer {
   display: none;
 }
@@ -1082,11 +1090,23 @@ p.days, p.maplink {
   .mobile {
     display: none;
   }
+  .roundel {
+    left: 50%;
+    bottom: 20px;
+    margin-left: -165px;
+    z-index: 9;
+  }
 }
 
 @media (max-width: 980px) {
   .desktop {
     display: none;
+  }
+  .roundel {
+    left: 50%;
+    bottom: -125px;
+    margin-left: -125px;
+    z-index: 9;
   }
 }
 

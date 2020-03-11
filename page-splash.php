@@ -103,12 +103,13 @@ get_header();
 </div>
 </div>
 </div>
+<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
 <div class="row">
 	<div class="col full mobile">
 	<img src='<?php echo $fullmimage; ?>'>
 </div>
 </div>
-<div class="roundel"><img src='/wp-content/themes/terrys-cafe/inc/images/time-for-terrys-roundel.svg'></div>
+
 </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

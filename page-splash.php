@@ -41,6 +41,7 @@ get_header();
 			$map = get_field('map_link'); 
 			$phone = get_field('phone_number'); 
 			$email = get_field('email_address'); 
+			$enquiries = get_field('enquiries_text'); 
 			if( $logo ):
 
 				// Image variables.
@@ -82,6 +83,7 @@ get_header();
 <div class="area"><h2>Contact</h2>
 <p><?php echo $phone; ?></p>
 <p><?php echo $email; ?></p>
+<p><?php echo $enquiries; ?></p>
 </div>
 <div class="area">
 <h2 class="booking">- No Bookings -</h2>
